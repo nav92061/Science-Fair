@@ -1,0 +1,20 @@
+# EchoNet-Dynamic is under a research use agreement: never commit it
+FileList.csv
+data/
+*.avi
+
+# Run outputs
+results/
+*.joblib
+*.pkl
+
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+.ipynb_checkpoints/

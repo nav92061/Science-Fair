@@ -1,0 +1,13 @@
+{
+  "_comment": "Grey-zone athlete: 14 mm wall with a large cavity. Any subset of the 45 inputs works; the rest are set to training medians.",
+  "wall_thickness": 14.0,
+  "lv_cavity": 60.0,
+  "gls": -19.0,
+  "e_e_prime": 6.5,
+  "EF": 60,
+  "EDV": 110,
+  "ESV": 45,
+  "resting_hr": 48,
+  "systolic_bp": 110,
+  "diastolic_bp": 68
+}

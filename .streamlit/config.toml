@@ -1,0 +1,10 @@
+# Used when running `streamlit run src/hcm_athlete/app.py` from the repo root.
+[theme]
+base = "light"
+primaryColor = "#c0392b"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

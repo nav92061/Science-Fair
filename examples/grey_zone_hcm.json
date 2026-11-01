@@ -1,0 +1,13 @@
+{
+  "_comment": "Grey-zone HCM: same 14 mm wall, small cavity and reduced strain.",
+  "wall_thickness": 14.0,
+  "lv_cavity": 45.0,
+  "gls": -12.0,
+  "e_e_prime": 11.0,
+  "EF": 65,
+  "EDV": 70,
+  "ESV": 28,
+  "resting_hr": 70,
+  "systolic_bp": 125,
+  "diastolic_bp": 80
+}

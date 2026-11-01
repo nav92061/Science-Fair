@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcm-athlete"
+dynamic = ["version"]
+description = "Distinguish hypertrophic cardiomyopathy from athlete's heart on synthetic, literature-informed echo features (research and teaching code)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.6",
+    "joblib>=1.2",
+]
+keywords = ["cardiology", "hypertrophic cardiomyopathy", "athlete's heart", "echocardiography", "synthetic data", "machine learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.optional-dependencies]
+ctgan = ["sdv>=1.0"]
+app = ["streamlit>=1.30", "altair>=5"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+hcm-athlete = "hcm_athlete.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "hcm_athlete.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
